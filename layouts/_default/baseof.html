@@ -21,5 +21,7 @@
         {{- block "main" . }}{{- end }}
     </div>
         {{- partial "footer.html" . -}}
+    <!-- Find the partials/analytic.html file and include it -->
+    {{ partial "analytics.html" . }}
     </body>
 </html>

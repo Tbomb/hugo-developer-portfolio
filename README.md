@@ -359,3 +359,35 @@ url = "https://www.mozilla.org/en-GB/firefox/"
 ```
 
 The [[tech]] item can be repeated as many times as you desire.
+
+
+
+### Analytics
+
+The theme supports Google Analytics, Plausible and Simple Analytics. You can enable the analytics by setting the `analytics` parameter to the name of the analytics you want to use. You can also set the `analyticsID` parameter to the ID of the analytics you want to use.
+
+However, some hosting providers like [Cloudflare Pages](https://pages.cloudflare.com/) provide analytics without the need to configure with the theme, otherwise set the `analyticsID` parameter to the ID of the analytics you want to use.
+
+- [goatCounter](https://goatcounter.com/)
+  - `code = "your_goatcounter_id"`
+- [googleAnalytics](https://analytics.google.com/)
+  - `id: UA-XXXXXXXXX-X`
+- [matomo](https://matomo.org/)
+  - `siteID: 1`
+  - `serverURL: https://example.com/matomo/`
+- [yandexMetrika](https://metrika.yandex.com/)
+  - `id: XXXXXXXX`
+- [cloudflare](https://www.cloudflare.com/)
+  - `id: XXXXXXXX`
+- [plausibleAnalytics](https://plausible.io/)
+  - `domain: example.com`
+  - `serverURL: https://example.com`
+  - `outboundLinksTracking: true`
+  - `fileDownloadsTracking: true`
+- [applicationInsights](https://azure.microsoft.com/en-us/services/monitor/)
+  - `connectionString: XXXXXXXX`
+- [microAnalytics](https://microanalytics.io/)
+  - `id: XXXXXXXX`
+  - `dnt: false`
+- [pirsch](https://pirsch.io/)
+  - `code: XXXXXXXX`
