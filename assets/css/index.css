@@ -27,19 +27,19 @@ ul.icons li a {
     text-decoration: none;
     position: relative;
     display: block;
-    width: 7em;
-    height: 7em;
+    width: 5em;
+    height: 5em;
     border-radius: 100%;
     border: solid 1px grey;
-    line-height: 6.75em;
+    line-height: 5em;
     overflow: hidden;
     text-align: center;
     white-space: nowrap;
 }
 
 ul.icons li a img{
-    width: 5em;
-    height: 5em;
+    width: 3em;
+    height: 3em;
 }
 
 ul.icons li a:before {
@@ -84,6 +84,17 @@ ul.icons li a:hover {
     ul.icons li a:before {
         font-size: 1.5rem;
     }
+    
+    ul.icons li a {
+        width: 4em;
+        height: 4em;
+        line-height: 3.75em;
+    }
+    
+    ul.icons li a img{
+    width: 2.75em;
+    height: 2.75em;
+}
 
 }
 

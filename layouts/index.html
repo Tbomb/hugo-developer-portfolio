@@ -82,6 +82,9 @@
         {{ end }} {{ if .Site.Data.homepage.social.whatsapp }}
         <li><a href="https://wa.me/{{ .Site.Data.homepage.social.whatsapp}}"> <img
                     class="contain" src="https://cdn.svgporn.com/logos/whatsapp.svg" alt="Whatsapp" loading="lazy"></a></li>
+        {{ end }} {{ if .Site.Data.homepage.social.customEmail }}
+        <li><a href="mailto:{{ .Site.Data.homepage.social.customEmail }}" > <img
+                    class="contain" src="/assets/icons/email-icon.svg" alt="Email" loading="lazy"></a></li>
         {{ end }}
     </ul>
 
