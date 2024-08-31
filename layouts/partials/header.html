@@ -4,9 +4,9 @@
             <ul class="uk-navbar-nav uk-visible@s">
                 {{if .IsHome}}
                 <li class="uk-active "><a style="font-size: 18px; text-transform: none"
-                        href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
+                        href="{{ .Site.Params.BaseURL | relURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
                 {{else}}
-                <li><a style="font-size: 18px; text-transform: none" href="/">{{ with .Site.Params.Home }} {{ . }}
+                <li><a style="font-size: 18px; text-transform: none" href="{{ .Site.Params.BaseURL | relURL }}">{{ with .Site.Params.Home }} {{ . }}
                         {{ end }}</a></li>
 
                 {{end}}
@@ -37,10 +37,10 @@
 
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
             {{if .IsHome}}
-            <li class="uk-active"><a style="font-size: 18px" href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+            <li class="uk-active"><a style="font-size: 18px" href="{{ .Site.Params.BaseURL | relURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
             </li>
             {{else}}
-            <li><a style="font-size: 18px" href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
+            <li><a style="font-size: 18px" href="{{ .Site.Params.BaseURL | relURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
 
             {{end}}
             {{ range .Site.Menus.main }}
